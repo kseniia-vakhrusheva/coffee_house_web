@@ -1,0 +1,138 @@
+#favorit_coffee {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.slider {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (max-width: $tablet-width){
+        justify-content: center;
+    }
+}
+
+.coffee_slider {
+    width: 100%;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+
+.text_dark {
+    color: $color-text-dark;
+    @media (max-width: $tablet-width){
+        font-size: 45px;
+    }
+    @media (max-width: $mobile-width){
+        font-size: 32px;
+    }
+}
+
+.text_accent {
+    @include font(60px, 125%);
+    color: $color-text-accent;
+    font-style: italic;
+    @media (max-width: $tablet-width){
+        font-size: 45px;
+    }
+    @media (max-width: $mobile-width){
+        font-size: 32px;
+    }
+}
+.slider_line {
+    max-width: 1152px;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+}
+
+.image_slider {
+    margin-bottom: 20px;
+    @media (max-width: $content-width){
+        width: 480px;
+        height: 480px;
+    }
+    @media (max-width: $tablet-width){
+        width: 348px;
+        height: 348px;
+    }
+}
+
+.text_slider {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.slider_line .text_dark {
+    @include font(24px, 125%);
+}
+
+.slider_line .text_dark {
+    @include font(24px, 125%);
+}
+
+.text_small {
+    @include font(16px, 150%, 400);
+}
+
+
+.button_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid $color-button-dark;
+    background: none;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.8s ease;
+    overflow: hidden;
+    cursor: pointer;
+    @media (max-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.button_image:hover {
+    @media (hover: hover) {
+        background : $color-button-dark;
+    }
+}
+
+.button_image:hover svg path{
+    @media (hover: hover) {
+        stroke: $color-button-light;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 40px;
+
+}
+.controls_dot {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: $color-text-accent;
+}
+
+.activ_dot {
+    background: $color-button-dark;
+}
