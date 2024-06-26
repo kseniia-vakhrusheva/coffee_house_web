@@ -1,0 +1,107 @@
+#mobile_app {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.mobile_app_container {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1400px) {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+.mobile_app_offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.mobile_screens {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile_screens img {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.mobile_app_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.button_app_store {
+    display: flex;
+    width: 200px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid $color-button-dark;
+    cursor: pointer;
+}
+
+.button_image:hover svg path{
+    @media (hover:hover) {
+        fill: $color-button-light; 
+    }
+}
+
+.button_app_store_content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.app_store_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.app_store_text_top {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.app_store_text_bottom {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.mobile_app_bottons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.button_image:hover div {
+    @media (hover: hover) {
+        color: $color-button-light;
+    }
+}
+
+.footer {
+    width: 100%;
+}
